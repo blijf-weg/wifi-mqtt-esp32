@@ -1,10 +1,10 @@
 #include "WiFi.h"
 #include "PubSubClient.h" //pio lib install "knolleary/PubSubClient"
 
-#define SSID          "Techtile"
-#define PWD           "Techtile229"
+#define SSID          "NETGEAR68"
+#define PWD           "excitedtuba713"
 
-#define MQTT_SERVER   "10.128.48.25"
+#define MQTT_SERVER   "192.168.1.2"
 #define MQTT_PORT     1883
 
 #define LED_PIN       2
@@ -21,7 +21,6 @@ void setup_wifi()
 {
   delay(10);
   Serial.println("Connecting to WiFi..");
-
   WiFi.begin(SSID, PWD);
 
   while (WiFi.status() != WL_CONNECTED)
